@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: leni_lb02
+  name: leni_lb02
+spec:
+  ports:
+  - name: 80-80
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: leni-app-ui
+  type: LoadBalancer
+status:
+  loadBalancer: {}
