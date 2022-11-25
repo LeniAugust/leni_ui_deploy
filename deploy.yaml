@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: ashu-app-ui
-  name: ashu-app-ui
+    app: leni-app-ui
+  name: leni-app-ui
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ashu-app-ui
+      app: leni-app-ui
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: ashu-app-ui
+        app: leni-app-ui
     spec:
       containers:
       - image: leniaugustine/leni-ui-app:appv1
