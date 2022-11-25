@@ -3,8 +3,8 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: leni_lb02
-  name: leni_lb02
+    app: leni-lb02
+  name: leni-lb02
 spec:
   ports:
   - name: 80-80
